@@ -1,0 +1,29 @@
+h2 {
+	font-size: 18px;
+	color: $color-light-grey;
+	margin: 5px 0 15px;
+	font-weight: normal;
+
+	span {
+		color: $color-primary;
+	}
+}
+
+h3 {
+	font-size: 16px;
+	font-weight: normal;
+
+	span {
+		color: $color-primary;
+	}
+}
+
+.appt-screen-1,
+.appt-screen-2,
+.appt-screen-logged-in {
+	h2 {
+		font-size: 21px;
+		margin-bottom: 30px;
+	}
+}
+

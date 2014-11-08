@@ -1,0 +1,72 @@
+.appt-pick-appointment-widget {
+	margin: 0;
+	height: 100%;
+
+	.dropdown-toggle {
+		background-color: #f8f8f8;
+	}
+
+	.appt-practitioner-left-pane {
+		width: 33.33%;
+		padding: 20px;
+		box-sizing: border-box;
+		height: 100%;
+		float: left;
+		overflow: hidden;
+		border-right: 2px solid #fff;
+		background: $color-ultra-light-grey;
+
+		&:before {
+			width: 33.33%;
+			padding: 20px;
+			box-sizing: border-box;
+			height: 100%;
+			float: left;
+			overflow: hidden;
+			border-right: 2px solid #fff;
+			background: $color-ultra-light-grey;
+			content: '';
+		    position: absolute;
+		    top: 0;
+		    bottom: 0;
+		    z-index: -1;
+		    left: 0;
+		}
+
+		.doc-image {
+			img {
+				width: 100%;
+			}
+		}
+
+		h3 {
+			margin-top: 3px;
+		}
+	}
+
+	.doc-speciality-tags {
+		span {
+			color: #fff;
+			background: $color-primary;
+			border-radius: 3px;
+			display: inline-block;
+			padding: 2px 4px 1px 4px;
+			margin: 2px 1px;
+			font-size: 0.8em;
+		}
+	}
+
+	.appt-practitioner-center-pane {
+		width: 66.66%;
+		padding: 20px;
+		box-sizing: border-box;
+		height: 100%;
+		float: left;
+		overflow: hidden;
+
+		h2 {
+			text-align: center;
+			margin-bottom: 8px;
+		}
+	}
+}

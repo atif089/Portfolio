@@ -1,0 +1,42 @@
+header {
+	background: #6079bb;
+	height: 115px;
+	box-sizing: border-box;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 9999;
+
+	.logo {
+		float: left;
+	}
+
+	.nav {
+		float: right;
+
+		ul {
+			margin-top:  43px;
+			
+			li {
+				float: left;
+				text-transform: uppercase;
+				font-size: 21px;
+				display: block;
+				padding: 10px;
+				margin-left: 5px;
+				font-weight: 300;
+
+				a {
+					color: #fff;
+					text-decoration: none;
+				}
+			
+				&.book-now {
+					background: $color-btn-orange;
+					font-weight: 700;
+				}
+			}
+
+		}
+	}
+}

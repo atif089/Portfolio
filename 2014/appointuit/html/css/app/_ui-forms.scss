@@ -1,0 +1,110 @@
+.appt-form {
+	margin: auto;
+	width: 90%;
+
+
+	p {
+		padding-bottom: 15px;
+		width: 100%;
+	}
+
+	br {
+		line-height: 1.4;
+	}
+
+	label {
+		font-weight: normal;
+	}
+
+	input[type=text],
+	input[type=password] {		
+		width: 100%;
+		max-width: 450px;
+		border-radius: 3px;
+		border: 1px solid $color-very-light-grey;
+		outline: none;
+		padding: 4px;
+		font-size: 13px;
+		color: $color-primary;
+
+		&:focus {
+			border-color: $color-primary;
+		}
+	}
+
+	.dropdown {
+		float: left;
+		margin-right: 20px;
+	}
+
+	.dropdown-menu {
+		width: auto;
+	}
+
+	.btn.dropdown-toggle{
+		width: auto;
+	}
+
+	.appt-form-field {
+		margin-bottom: 15px;
+	}
+
+	.appt-form-inline-field {
+		float: left;
+		margin-right: 15px;
+		width: auto !important;
+
+		/* select hack */
+		.bootstrap-select:not([class*="span"]):not([class*="col-"]):not([class*="form-control"]) {
+			width: auto !important;
+		}
+
+		ul.selectpicker {
+			overflow-x: hidden;
+		}
+
+		.filter-option{
+			color: $color-light-grey;
+		}
+
+		input[type=text],
+		input[type=password] {
+			width: 100%;
+			min-width: 175px;
+		}
+	}
+
+	.appt-form-buttons {
+		margin-top: 20px;
+
+		.button {
+			margin-left: 10px;
+			margin-right: 10px;
+		}
+	}
+
+	.disclaimer {
+		font-size: 0.8em;
+		color: $color-very-light-grey;
+		padding: 15px 0;
+		border: 1px solid $color-ultra-light-grey;
+		border-left: 0 none;
+		border-right: 0 none;
+		line-height: 1.4;
+	}
+
+
+
+	/* alternate form */
+	&.appt-form-branded {
+		label {
+			color: $color-primary;
+		}
+
+		input[type=text],
+		input[type=password] {
+			border: 1px solid $color-primary;;
+		}
+	}	
+
+}

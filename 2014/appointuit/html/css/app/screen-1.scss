@@ -1,0 +1,33 @@
+.appt-screen-1 {
+
+	display: table;
+	height: 100%;
+	width: 100%;
+
+	.appt-vert-middle {
+		vertical-align: middle;	
+		display: table-cell;
+		width: 100%;
+	}
+
+	.appt-question {
+
+		width: 400px;
+		margin: auto;
+		text-align: center;
+
+
+		.block-button {
+			margin-right: 20px;
+			width: 180px;
+			display: inline-block;
+			padding: 5px;
+			font-size: 13px;
+
+			&.last {
+				margin-right: 0;
+			}
+		}
+	}
+
+}

@@ -1,0 +1,63 @@
+#social-media {
+	padding: 40px 0;
+
+	&:after {
+		@include clear();
+	}
+
+	h4 {
+		color: #6079bb;
+		text-transform: uppercase;
+		font-weight: bold;
+		margin: 0 0 20px;
+	}
+
+	a {
+		display: block;
+		position: relative;
+		float: left;
+		width: 30%;
+		margin-right: 5%;
+		box-sizing: border-box;
+		padding: 15px 15px 15px 55px;
+		font-weight: bold;
+		color: #fff;
+
+		&:last-child {
+			margin-right: 0;
+		}
+
+		span.icon {
+			position: absolute;
+			display: block;
+			background: url(../img/icons-sprite.png) 0 0 no-repeat;
+			width: 40px;
+			height: 30px;
+			left: 10px;
+			top: 8px;
+		}
+	}
+
+	.fb {
+		background-color: #3a589b;
+		span.icon{
+			background-position: 10px 0;
+		}
+	}
+
+	.twitter {
+		background-color: #598dca;
+		span.icon {
+			background-position: -54px 0;
+		}
+	}
+
+	.goog {
+		background-color: #d6492f;
+		span.icon {
+			background-position: -108px 0;
+		}
+	}
+
+
+}

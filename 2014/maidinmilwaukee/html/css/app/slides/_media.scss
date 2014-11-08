@@ -1,0 +1,46 @@
+#news-media {
+	background: #536caf;
+	padding: 30px 0;
+
+	h4 {
+		font-weight: bold;
+		font-size: 16px;
+		text-transform: uppercase;
+	}
+
+	.news-links {
+
+		margin-top: 5px;
+		margin-left: 80px;
+
+		&:after {
+			@include clear();
+		}
+
+
+		a {
+			display: inline-block;
+			height: 73px;
+			background:transparent url('../img/logos-sprite.png') left top no-repeat;
+		}
+
+		.news-link-1 {
+			width: 205px;
+		}
+
+		.news-link-2 {
+			width: 205px;
+			background-position: -215px 0;
+		}
+
+		.news-link-3 {
+			width: 205px;
+			background-position: -315px 0;
+		}
+
+		.news-link-3 {
+			width: 345px;
+			background-position: -415px 0;
+		}
+	}
+}

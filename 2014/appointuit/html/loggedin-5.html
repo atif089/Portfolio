@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Document</title>
+		<!-- styles -->
+		<link rel="stylesheet" href="css/font-awesome.css">
+		<link rel="stylesheet" href="css/style.css">
+		<!--[if lte IE 9]>
+			<link rel="stylesheet" href="css/ie.css">
+		<![endif]-->
+	</head>
+	<body>
+		<!-- appointuit widget -->
+		<div class="appt-widget">
+			<div class="page-container">
+				<!-- appt-widget-header-breadcrumbs -->
+				<div class="appt-widget-header-breadcrumbs">
+					<ul>
+						<li class="active"><span>Who’s the appointment for?</span></li>
+						<li class="active"><span>Type of appointment?</span></li>
+						<li class="active"><span>Select time and Doctor</span></li>
+					</ul>
+				</div>
+				<!-- #appt-widget-header-breadcrumbs -->
+				<!-- appt-widget-content -->
+				<div class="appt-widget-content">
+					<div class="appt-screen-2 appt-screen-content-wrap appt-screen-logged-in">
+						<div class="appt-vert appt-pick-appointment-widget">
+							<div class="appt-practitioner-left-pane">
+								<h2>Pick your practitioner</h2>
+								<div class="row">
+									<div class="col-md-12">
+										<select name="" id="" class="selectpicker">
+											<option value="">Dr. Hibbs</option>
+										</select>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-4 doc-image">
+										<img src="img/doc.jpg" alt="">
+									</div>
+									<div class="col-md-8 last">
+										<h3>Dr Hibbit</h3>
+										<p>Specializing in:</p>
+										<p class="doc-speciality-tags">
+											<span>GP</span>
+											<span>Children's Health</span>
+											<span>Travel Medicine</span>
+										</p>
+									</div>
+								</div>
+							</div>
+							<div class="appt-practitioner-center-pane">
+								<h2>What day would you like?</h2>
+								<div class="row">
+									<div class="col-md-12">
+										<div id="appt-datepicker"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- #appt-widget-content -->
+			</div>
+			<!-- appoituit widget footer -->
+			<div class="appt-widget-footer">
+				<div class="footer-appointments">
+					<div class="row">
+						<div class="col-md-8">
+							<div class="appt-footer-profile-blocks">
+								<div class="appt-footer-profile-block appt-footer-profile-picture-block">
+									<p>appointment for:</p>
+									<p><span>Your self</span></p>
+								</div>
+								<div class="appt-footer-profile-block">
+									<p>type of appointment:</p>
+									<p><span>Standard long appointment</span></p>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<a class="button alt pull-right">logout</a>
+							<a class="button alt pull-right">profile</a>
+						</div>
+					</div>
+				</div>
+				<div class="appt-branding">
+					<div class="row">
+						<div class="col-md-9  col-md-offset-3">
+							<img src="img/branding.png" alt="Appointuit.com" class="pull-right">
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- #appoituit widget footer -->
+		</div>
+		<!-- #appointuit widget -->
+		<!-- scripts -->
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+		<script type="text/javascript" src="js/jquery-ui.min.js"></script>
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="js/app.js"></script>
+	</body>
+</html>

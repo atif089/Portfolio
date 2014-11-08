@@ -1,0 +1,103 @@
+#services {
+	background: #6079bb;
+	padding: 60px 0;
+	text-align: center;
+
+	h2 {
+		display: inline-block;
+		background: #fff;
+		color: #6079bb;
+		padding: 10px;
+		margin: 20px auto;
+	}
+
+	.intro {
+		margin: 20px;
+		font-size: 16px;
+	}
+
+	.service-features-container {
+
+		.service-feature {
+			background: #536caf;
+			padding: 30px 30px 0;
+			height: 480px;
+			margin: 20px 0;
+			float: left;
+			width: 30%;
+			margin-right: 5%;
+			color: #fff;
+			box-sizing: border-box;
+			border-radius: 5px;
+			font-size: 14px;
+
+			&.last {
+				margin-right: 0;
+			}
+
+			h3 {
+				font-size: 18px;
+				font-weight: bold;
+				padding-bottom: 24px;
+				margin-bottom: 24px;
+				padding-top: 5px;
+
+				.small {
+					font-size: 14px;
+				}
+
+				.icon {
+					display: block;
+					width: 120px;
+					height: 140px;
+					margin:  auto;
+					background:transparent url('../img/services-icons-sprite.png') left top no-repeat;
+				}
+			}
+
+			p {
+				line-height: 2.6;
+			}
+
+			ul {
+				line-height: 1.3;
+
+				li {
+					list-style: none;
+					background:transparent url('../img/tick-2.png') left 5px no-repeat;
+					padding-bottom: 15px;
+					padding-left: 30px;
+					text-align: left;
+				}
+			}
+
+			&.service-feature-1 {
+				.icon {
+					background-position: 0 0;
+				}
+			}
+			&.service-feature-2 {
+				.icon{
+					background-position: -135px 0;
+				}
+			}
+			&.service-feature-3 {
+				.icon{
+					background-position: 100% 0;
+				}
+			}
+		}
+
+		&:after {
+			@include clear();			
+		}
+	}
+
+
+	.services-footer {
+		background: #536caf;
+		border-radius: 5px;
+		padding: 25px;
+		margin: 20px 0 0;
+	}
+}

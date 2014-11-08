@@ -1,0 +1,195 @@
+$widget-width: 990px;
+$widget-height: 560px;
+$header-height: 50px;
+$footer-height: 50px;
+$footer-branding-height: 30px;
+
+
+// colors
+$color-primary: #d3335a;
+$color-primary-dark: #b52548;
+$color-primary-more-dark: #730620;
+$color-primary-contrast: #ffffff;
+$color-white: #ffffff;
+$color-light-grey: #4c4c4c;
+$color-very-light-grey: #b0b0b0;
+$color-ultra-light-grey: #eaeaea;
+
+
+
+
+// typography
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic);
+
+$font-family-primary: "Lato", Helvetica, 'lucida grande', tahoma, verdana, arial, sans-serif;
+
+.text-center {
+	text-align: center;
+}
+
+
+
+// layout
+.appt-widget {
+	width: $widget-width;
+	height: $widget-height;
+	position: relative;
+	margin: auto;
+	font-family: $font-family-primary;
+}
+
+.page-container {
+	height: 100%;
+	position: relative;
+	padding-bottom: $footer-height + $footer-branding-height + 10;
+
+	&:after {
+		content: "";
+		display: block;
+	}
+
+	.oops {
+		max-width: 600px;
+		width: 80%;
+		text-align: center;
+	}
+}
+
+.appt-widget-header {
+	background: $color-primary;
+	color: $color-primary-contrast;
+	height: $header-height;
+	padding: 17px;
+	text-align: center;
+	font-size: 17px;
+	position: absolute;
+	width: 100%;
+}
+
+
+/* breadcrumbs header */
+.appt-widget-header-breadcrumbs {
+	
+	ul {
+		display: table;
+		table-layout: fixed;
+		width: 100%;
+		margin: 0;
+		padding: 0;
+
+		li {
+			display: table-cell;
+			list-style: none;
+			display: inline-block;
+			width: 33.33%;
+			text-align: center;
+
+			span {
+				background: #e5e4e4;
+				display: block;
+				color: #373737;
+				padding: 1.1em;
+				font-size: 1em;
+				height: 50px;
+				margin-right: 2px;
+			}
+
+			&.active span {
+				background: $color-primary;
+				color: $color-primary-contrast;
+			}
+
+			&:last-child span{
+				margin-right: 0;
+			}
+		}
+	}
+
+}
+
+
+
+/*  content */
+.appt-widget-content {
+	position: absolute;
+	top: $header-height;
+	bottom: $footer-height + $footer-branding-height;
+	width: 100%;
+
+	.tip {
+		color: $color-very-light-grey;
+		font-style: italic;
+	}
+}
+
+.appt-widget-footer {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	color: $color-primary-contrast;
+
+	.footer-appointments {
+		background: $color-primary;
+		height: 40px;
+		padding: 7px 5px 5px;
+
+		.appt-footer-notes {
+			padding-top: 5px;
+		}
+
+		.appt-existing-user {
+			position: absolute;
+			right: 20px;
+			bottom: 35px;
+		}
+
+		.button {
+			margin-left: 10px;
+		}
+	}
+
+	.appt-footer-profile-blocks {
+		position: absolute;
+		top: -7px;
+		left: 10px;
+		height: 40px;
+		overflow: hidden;
+
+		.appt-footer-profile-block {
+			float: left;
+			height: 100%;
+			border-right: 1px solid $color-primary-dark;
+			padding: 3px 20px 0;
+			box-sizing: content-box;
+			color: $color-primary-more-dark;
+			font-size: 0.8em;
+			line-height: 1.1;
+
+			&.appt-footer-profile-picture-block {
+				padding-left: 45px;
+				position: relative;
+				background: transparent url('../img/profile-icon-footer.png') 5px 50% no-repeat;
+			}
+
+			p {
+				padding: 0;
+				margin: 0;
+			}
+
+			span {
+				font-size: 2em;
+				color: $color-white;
+			}
+		}
+	}
+
+	.appt-branding {
+		margin: 3px 0;
+		padding: 5px 0;
+		border: 1px solid $color-ultra-light-grey;
+		border-left: 0 none;
+		border-right: 0 none;
+		height: $footer-branding-height;
+	}
+}

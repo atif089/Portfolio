@@ -1,0 +1,169 @@
+.dropdown-menu {
+	width: 100%; 
+}
+
+.btn.dropdown-toggle{
+	width: 100%;
+	background: transparent;
+	border: 1px solid $color-primary;
+	position: relative;
+	text-align: left;
+
+	span {
+		color: $color-primary;
+	}
+}
+
+
+/* scheduler widget */
+
+.appointment-scheduler-widget {
+
+	margin: 20px 0;
+
+	.appt-scheduler-column {
+		position: relative;
+	}
+
+	.appt-scheduler-head {
+		border-radius: 4px 4px 0 0;
+		background: $color-primary;
+		color: #fff;
+		padding: 10px;
+		text-align: center;
+	}
+
+	.scheduler-widget-nav {
+		background: transparent url('../img/scheduler-widget-nav.png') 50% 0 no-repeat;
+		height: 30px;
+		cursor: pointer;
+		margin: 10px;
+
+		&.scheduler-widget-next {
+			background-position: 50% 100%;
+		}
+	}
+
+	.appt-slots-list {
+		height: 150px;
+		overflow: hidden;
+
+		ul {
+			margin: 0;
+			padding: 0;
+			text-align: center;
+			color: $color-light-grey;
+		}
+
+		li {
+			list-style: none;
+			font-size: 12px;
+			padding: 10px 0;
+		}
+	}
+
+}
+
+/* date picker */
+
+.ui-datepicker-header {
+	background: none !important;
+	border: none !important;
+	color: $color-light-grey;
+	position: relative;
+	text-align: center;
+
+	.ui-datepicker-title {
+		display: inline-block;
+	}
+
+	.ui-datepicker-next,
+	.ui-datepicker-prev {
+		border: 0;
+		&:hover span,
+		&:hover {
+			background-color: transparent;
+			border: 0 none;
+		}
+
+			span {
+				background:transparent url('../img/datepicker-nav.png') 0 0 no-repeat;
+				width: 10px !important;
+			}
+		}
+
+	.ui-datepicker-next {
+		span {
+			background-position: 100% 0;
+		}
+	}
+}
+
+
+.ui-datepicker-inline {
+
+	background: none !important;
+	border: none !important;
+	margin: 0 auto !important;
+	width: 500px;
+
+
+	
+	.ui-datepicker-calendar {
+		border-collapse:separate;
+		border-spacing: 5px;
+
+		thead {
+			display: none;
+		}
+
+		tr {
+			td {
+				font-size: 1.2em;
+
+				a {
+					border: 1px solid $color-primary;
+					border-radius: 3px;
+					color: $color-light-grey;
+					background: none;
+					display: block;
+					padding: 10px;
+					text-align: center;
+
+					&:hover {
+						background: $color-primary;
+						color: #fff;
+						background: 1px solid $color-primary;
+					}
+				}
+
+				&.ui-datepicker-current-day {
+					a {
+						background: $color-primary;
+						color: #fff;
+						background: 1px solid $color-primary;						
+					}
+				}
+			}
+
+			.ui-state-disabled {
+				margin: 0 !important;
+				padding: 0 !important;
+				background: none !important;
+
+
+				span {
+					color: $color-very-light-grey;
+					border: 1px solid $color-very-light-grey;
+					border-radius: 3px;
+					background: none;
+					display: block;
+					padding: 10px;
+					text-align: center;
+				}
+			}	
+		}
+
+	}
+
+}
