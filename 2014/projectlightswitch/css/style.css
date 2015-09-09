@@ -1,0 +1,131 @@
+/* Eric Meyer's Reset CSS v2.0 - http://cssreset.com */
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{border:0;font-size:100%;font:inherit;vertical-align:baseline;margin:0;padding:0}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:none}table{border-collapse:collapse;border-spacing:0}
+
+.row:after {
+  content: '.';
+  clear: both;
+  height: 0;
+  margin: 0;
+  padding: 0;
+  visibility: hidden;
+  display: block;
+}
+
+/* magic */
+
+
+.wrap {
+  width: 1024px;
+  margin: auto;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+#header {
+  height: 120px;
+  background: #00b9a0;
+  overflow: hidden;
+}
+
+#header h1 {
+  float: left;
+}
+
+#header #nav {
+  float: right;
+  margin-top: 50px;
+  font-family: Verdana, Tahoma, sans-serif;
+  font-size: 13px;
+}
+
+#header #nav li {
+  display: inline-block;
+  margin: 5px;
+}
+
+#header #nav li a {
+  display: inline-block;
+  border: 2px solid #00b9a0;
+  text-decoration: none;
+  padding: 5px;
+  color: #004650;
+}
+
+#header #nav li a:hover {
+  border-color: #fff;
+  color: #fff;
+}
+
+
+/* home */
+
+#home {
+  background: url(../img/bg.jpg) no-repeat 50% 50%;
+  background-size: cover;
+  height: 450px;
+  position: relative;
+}
+
+#home .home-slogan {
+  color: #fff;
+  font-size: 22px;
+  width: 333px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -70px;
+  margin-left: -160px;
+  line-height: 1.2;
+}
+
+
+/* about */
+
+#about h2,
+#about h3 {
+  color: #004650;
+}
+
+#about .grey-cols {
+  background: #e6e7e8;
+}
+
+#about .grey-cols .col {
+  width: 33.33%;
+  float: left;
+  padding: 0 40px;
+  color: #666;
+  border-right: 1px solid #999;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+
+  padding-bottom: 200px;
+  overflow: hidden;
+}
+
+#about .grey-cols .col:after {
+  margin-bottom: -180px;
+  overflow: hidden;
+  content: '.'
+}
+
+#about .grey-cols .col:last-child {
+  border-right: 0;
+}
+
+#about .grey-cols .col h3 {
+  font-size: 24px;
+  margin-bottom: 22px;
+}
+
+#about .btn-green {
+  display: block;
+  width: 100px;
+  text-align: center;
+  padding: 10px;
+  background: #00b9a0;
+  color: #fff;
+  margin: 20px auto;
+}
